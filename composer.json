@@ -1,0 +1,37 @@
+{
+    "name": "foresight-dev/elementor-pro",
+    "description": "Elementor Pro mirror for those using composer to manage Wordpress dependencies",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "homepage": "https://github.com/foresight-dev/elementor-pro",
+    "keywords": ["wordpress", "plugin"],
+    "authors": [
+      {
+        "name": "Elementor.com",
+        "homepage": "https://elementor.com"
+      }
+    ],
+    "minimum-stability": "stable",
+	"config": {
+		"platform": {
+			"php": "7.4"
+		},
+		"optimize-autoloader": true,
+		"sort-packages": true,
+		"allow-plugins": {
+			"composer/installers": true
+		}
+	},
+	"require": {
+		"php": ">=7.1",
+		"composer/installers": "~1.0|~2.0"
+	},
+	"autoload-dev": {
+		"classmap": [
+			"wordpress/"
+		]
+	},
+	"extra": {
+		"wordpress-install-dir": "wordpress"
+	}
+}
